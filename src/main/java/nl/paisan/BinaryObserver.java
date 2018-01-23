@@ -11,6 +11,10 @@ public class BinaryObserver extends Observer {
     }
 
     public String update() {
-        return Integer.toBinaryString(this.subject.getState());
+
+        String s = Integer.toBinaryString(this.subject.getState());
+        System.out.println("Binary string: " + s);
+
+        return s;
     }
 }
