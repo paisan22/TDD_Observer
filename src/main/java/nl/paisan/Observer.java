@@ -3,9 +3,8 @@ package nl.paisan;
 /**
  * Created by paisanrietbroek on 23/01/2018.
  */
-public class Observer {
+public abstract class Observer {
 
-    public void update() {
-
-    }
+    protected Subject subject;
+    public abstract String update();
 }
